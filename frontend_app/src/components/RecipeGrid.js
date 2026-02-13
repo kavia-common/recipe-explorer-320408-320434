@@ -16,6 +16,7 @@ export default function RecipeGrid({ items, onOpen }) {
           className="card"
           onClick={() => onOpen(r.id)}
           role="listitem"
+          aria-label={r.name || "Recipe"}
         >
           <div className="thumbWrap">
             {r.thumbnail ? (
